@@ -17,25 +17,26 @@ var main = function() {
                 $(".city-info").html("<p>" + city + "</p>");
 
                 // GET CITY TEMPERATURE AND ADD TO HTML
-                var temperature = data.main.temp;
-                $(".city-temperature").html("<p>" + temperature + "</p>");
-
-                // GET CITY DESCRIPTION AND ADD TO HTML
+                var temperature = Math.floor(data.main.temp);
+                $(".city-temperature").html("<p>" + temperature + " <button id=\"tempButton\">F </button> </p>");
+                 // GET CITY DESCRIPTION AND ADD TO HTML
                 var description = data.weather[0].description;
                 $(".city-description").html("<p>" + description + "</p>");
 
-                // GET CITY WIND AND ADD TO HTML
-                var speed = data.wind.speed;
-                $(".city-wind").html("<p>" + speed + "</p>");
-
                 // GET CITY WEATHER IMAGE AND ADD TO HTML
                 var image = data.weather[0].icon;
-                $(".weather-icon").html("<img src=http://openweathermap.org/img/w/" + image + ".png>");
+                $(".weather-icon").html("<img clas=\"owf-5x\" src=http://openweathermap.org/img/w/" + image + ".png>");
             });
         });
     } else {
         console.log("Location not found...");
     }
+
+    /*
+    $("#tempButton").on("click", function() {
+      console.log("CLICKED");
+    });
+    */
 };
 
 

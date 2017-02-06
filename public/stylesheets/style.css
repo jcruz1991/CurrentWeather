@@ -1,12 +1,32 @@
 body {
-  font: "Times New Roman", Times, serif;
+    font: "Roboto";
 }
 
 .weather-icon {
-  text-align: center;
+    text-align: center;
 }
+
 .weather-info {
-  text-align: center;
-  color: blue;
-  font-size: 24px;
+    text-align: center;
+}
+
+.city-info {
+    font-size: 60px;
+}
+
+.city-temperature {
+    font-size: 50px;
+}
+
+.city-description {
+    font-size: 50px;
+}
+
+#tempButton {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
 }

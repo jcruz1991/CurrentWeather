@@ -1,9 +1,6 @@
 #Weather
 
-Project 2 : A CSUF Craigslist Web Application
-
 By:Julio Cruz
-
 
 #Project Summary
 A basic weather app that uses your location to display the your current city, temperature, weather description and wind speed.

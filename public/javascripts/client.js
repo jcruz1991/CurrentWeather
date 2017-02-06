@@ -7,8 +7,7 @@ var main = function() {
 
             var latitude = position.coords.latitude;
             var longitude = position.coords.longitude;
-            var url = "http://api.openweathermap.org/data/2.5/weather?units=imperial&lat=" + latitude
-                + "&lon=" + longitude  + "&APPID=" + API_KEY;
+            var url = "http://api.openweathermap.org/data/2.5/weather?units=imperial&lat=" + latitude + "&lon=" + longitude  + "&APPID=" + API_KEY;
 
             $.getJSON(url, function(data) {
                 console.log(data);
